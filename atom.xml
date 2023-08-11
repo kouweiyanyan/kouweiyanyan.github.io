@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>_炎_炎_</title>
   
-  <subtitle>人活着，生命的意义在乎什么？也罔顾不了我对你无尽的思念</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <subtitle>追求完美的up主</subtitle>
+  <link href="https://kouweiyanyan.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2023-08-09T17:02:13.550Z</updated>
-  <id>http://example.com/</id>
+  <link href="https://kouweiyanyan.github.io/"/>
+  <updated>2023-08-11T15:56:52.258Z</updated>
+  <id>https://kouweiyanyan.github.io/</id>
   
   <author>
     <name>@_炎_炎_@</name>
@@ -17,9 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>云原生</title>
+    <link href="https://kouweiyanyan.github.io/posts/9520.html"/>
+    <id>https://kouweiyanyan.github.io/posts/9520.html</id>
+    <published>2023-08-12T15:39:00.000Z</published>
+    <updated>2023-08-11T15:56:52.258Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="k8s笔记"><a href="#k8s笔记" class="headerlink" title="k8s笔记"></a>k8s笔记</h4><blockquote><p>-JAVA<br>[bootstrap-token] configured RBAC rules to allow the csrapprover controller automatically approve CSRs from a Node Bootstrap Token<br>[bootstrap-token] configured RBAC rules to allow certificate rotation for all node client certificates in the cluster<br>[bootstrap-token] Creating the “cluster-info” ConfigMap in the “kube-public” namespace<br>[kubelet-finalize] Updating “/etc/kubernetes/kubelet.conf” to point to a rotatable kubelet client certificate and key<br>[addons] Applied essential addon: CoreDNS<br>[addons] Applied essential addon: kube-proxy</p></blockquote><p>Your Kubernetes control-plane has initialized successfully!</p><p>To start using your cluster, you need to run the following as a regular user:</p><p>  mkdir -p $HOME/.kube<br>  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config<br>  sudo chown $(id -u):$(id -g) $HOME/.kube/config</p><p>Alternatively, if you are the root user, you can run:</p><p>  export KUBECONFIG=/etc/kubernetes/admin.conf</p><p>You should now deploy a pod network to the cluster.<br>Run “kubectl apply -f [podnetwork].yaml” with one of the options listed at:<br>  <a href="https://kubernetes.io/docs/concepts/cluster-administration/addons/">https://kubernetes.io/docs/concepts/cluster-administration/addons/</a></p><p>You can now join any number of control-plane nodes by copying certificate authorities<br>and service account keys on each node and then running the following as root:</p><p>  kubeadm join cluster-endpoint:6443 —token pa5vdv.83ebix0qcne2ia9d \<br>    —discovery-token-ca-cert-hash sha256:140638f5d46fd376fb23160a458d149b1ca789cc4066ba05f0eb7d658a656922 \<br>    —control-plane </p><p>Then you can join any number of worker nodes by running the following on each as root:<br>//从节点加入主节点命令<br>kubeadm join cluster-endpoint:6443 —token pa5vdv.83ebix0qcne2ia9d \<br>    —discovery-token-ca-cert-hash sha256:140638f5d46fd376fb23160a458d149b1ca789cc4066ba05f0eb7d658a656922<br>[root@k8s-master ~]#<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">注意：当下面命令过期了，要执行此命令可以获取新的 </span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line">kubeadm join cluster-endpoint:6443 --token pa5vdv.83ebix0qcne2ia9d \</span><br><span class="line">    --discovery-token-ca-cert-hash sha256:140638f5d46fd376fb23160a458d149b1ca789cc4066ba05f0eb7d658a656922 </span><br></pre></td></tr></table></figure></p><p> 在运行命令获取新的令牌</p><p><strong>kubeadm token create —print-join-command</strong></p><p>查看镜像日志命令</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo kubectl logs kubernetes-dashboard<span class="number">-6</span>dccb458d5-x7xft --<span class="keyword">namespace</span>=kube-system</span><br></pre></td></tr></table></figure><div class="tip "><p>default</p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;k8s笔记&quot;&gt;&lt;a href=&quot;#k8s笔记&quot; class=&quot;headerlink&quot; title=&quot;k8s笔记&quot;&gt;&lt;/a&gt;k8s笔记&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;-JAVA&lt;br&gt;[bootstrap-token] configured RBAC ru</summary>
+      
+    
+    
+    
+    
+    <category term="计算机" scheme="https://kouweiyanyan.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="http://example.com/posts/4a17b156.html"/>
-    <id>http://example.com/posts/4a17b156.html</id>
+    <link href="https://kouweiyanyan.github.io/posts/4a17b156.html"/>
+    <id>https://kouweiyanyan.github.io/posts/4a17b156.html</id>
     <published>2023-08-09T15:41:53.379Z</published>
     <updated>2023-08-09T17:02:13.550Z</updated>
     
